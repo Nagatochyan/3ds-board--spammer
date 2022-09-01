@@ -26,7 +26,7 @@ def spam():
     print(r)
     p.kill()
 
-schedule.every().seconds.do(spam)
+schedule.every(3).seconds.do(spam)
 while True:
     schedule.run_pending()
     time.sleep(1)
