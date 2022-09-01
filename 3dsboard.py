@@ -8,7 +8,7 @@ import subprocess
 lolo = input(f'spam word:')
 proxies = { 'http':'socks5://127.0.0.1:9050', 'https':'socks5://127.0.0.1:9050' }
 def spam():
-    cmd = r'C:\Users\tamat\3D Objects\das\Tor\tor.exe'
+    cmd = r'tor.exeへのパス'
     p = subprocess.Popen(cmd, shell=False)
     code1 = ''.join([random.choice(string.ascii_letters + string.digits) for i in range(6)])
     codex = ''.join([random.choice(string.ascii_letters + string.digits) for i in range(8)])
